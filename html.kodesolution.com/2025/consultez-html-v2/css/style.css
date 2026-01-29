@@ -427,7 +427,7 @@ textarea.form-control {
   background-color: var(--theme-color-dark);
 }
 .dark-layout .preloader:after {
-  background-image: url(../images/logo.png);
+  background-image: url(../images/mobogg-logo2.png);
 }
 .dark-layout .sticky-header {
   background-color: var(--theme-color-dark);
@@ -593,11 +593,11 @@ figure.image {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 160px;                /* ← Increased width */
-  height: 160px;               /* ← Increased height (adjust to match your logo's aspect ratio) */
+  width: 160px;                
+  height: 160px;               
   transform: translate(-50%, -50%);
   background-image: url(../images/mobogg-logo2.png);
-  background-size: contain;     /* Ensures logo isn't stretched */
+  background-size: contain;     
   background-repeat: no-repeat;
   background-position: center;
   animation: pulse 1s infinite linear;
@@ -607,7 +607,7 @@ figure.image {
 .preloader:before {
   content: "Loading";
   position: absolute;
-  top: calc(50% + 90px);       /* Position below the larger logo (half of 160px + some spacing) */
+  top: calc(50% + 90px);       
   left: 50%;
   transform: translateX(-50%);
   color: var(--theme-color-dark);
@@ -3364,7 +3364,7 @@ Main Header
   display: block;
   width: 100%;
 }
-.
+
 
 
 .main-header {
@@ -4754,15 +4754,15 @@ Main Header
     display: none;
   }
 }
-.header-style-one .sticky-header,
+/* .header-style-one .sticky-header,
 .header-style-seven .sticky-header,
 .header-style-six .sticky-header,
 .header-style-five .sticky-header,
 .header-style-four .sticky-header,
 .header-style-three .sticky-header,
 .header-style-two .sticky-header {
-  /*.main-menu .navigation > li.current > a,*/
-}
+  .main-menu .navigation > li.current > a,
+} */
 .header-style-one
   .sticky-header
   .main-menu
@@ -5631,7 +5631,7 @@ Sticky Header
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
-  background-color: #222;
+  background-color: #00296b;
   padding: 0px 0px;
   z-index: 5;
   opacity: 0;
@@ -8124,11 +8124,7 @@ Section Title
 .hzAccordion-area .outer-box {
   padding: 0px 50px;
 }
-@media (max-width: 575.98px) {
-  .hzAccordion-area .outer-box {
-    padding: 0px;
-  }
-}
+
 .hzAccordion__wrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8226,6 +8222,8 @@ Section Title
 .hzAccordion__item .content .image img {
   height: 100%;
 }
+
+
 .hzAccordion__item .content .wrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8234,6 +8232,34 @@ Section Title
   gap: 60px;
   height: 100%;
 }
+@media (max-width: 575.98px) {
+  .hzAccordion__item .content .wrp {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+  .hzAccordion__item .content .content-wrp {
+    max-width: 100%;
+  }
+  .hzAccordion__item .content .content-wrp {
+    text-align: left;
+  }
+  .hzAccordion__item .content .image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .hzAccordion__item .content .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .hzAccordion-area .outer-box {
+    padding: 0px;
+  }
+}
+
 .hzAccordion__item .content .content-wrp {
   max-width: 330px;
   display: -webkit-box;
@@ -8316,6 +8342,9 @@ Section Title
   .hzAccordion__item .content .arry-btn {
     font-size: 40px;
   }
+  .hzAccordion__item .content .image img {
+  /* height: 100px; */
+}
 }
 @media (max-width: 991.98px) {
   .hzAccordion__item .head .head-title {
