@@ -5559,6 +5559,7 @@ Sticky Header
   visibility: hidden;
   z-index: 999999;
 }
+
 .mobile-menu .menu-backdrop {
   position: fixed;
   right: 0;
