@@ -9075,6 +9075,7 @@ Section Title
 .about-section-four {
   overflow: hidden;
 }
+
 .about-section-four .image-column .inner-column {
   position: relative;
   z-index: 1;
@@ -9377,6 +9378,7 @@ Section Title
     padding-right: 88px;
     height: 57px;
   }
+  
  
 }
 .about-wrapper-4 .about-content .info .theme-btn.btn-style-one:hover {
